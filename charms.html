@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Charms | Hollow Knight Companion</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="guide.html">Guide</a>
+        <a href="charms.html">Charms</a>
+    </nav>
+
+
+    <main class="charms-page">
+
+        <header class="page-header">
+
+            <p class="eyebrow">COLLECTION</p>
+
+            <h1>Charms</h1>
+
+            <div class="ornament">◇</div>
+
+            <p>
+                Track every charm you've discovered throughout Hallownest.
+            </p>
+
+        </header>
+
+
+        <section class="charm-progress">
+
+            <div class="progress-text">
+                <span>CHARMS COLLECTED</span>
+                <strong id="charm-count">0 / 40</strong>
+            </div>
+
+            <div class="progress-bar">
+                <div id="charm-progress-fill"></div>
+            </div>
+
+        </section>
+
+
+        <section class="table-container">
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Charm</th>
+                        <th>Notches</th>
+                        <th>Effect</th>
+                        <th>How to Obtain</th>
+                        <th>Cost</th>
+                    </tr>
+                </thead>
+
+                <tbody id="charms-table">
+                    <!-- charms.js will generate the rows -->
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+
+    <script src="main.js"></script>
+    <script src="charms.js"></script>
+
+</body>
+
+</html>
