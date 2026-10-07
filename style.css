@@ -1,0 +1,165 @@
+/* style.css */
+
+:root {
+  color-scheme: light dark;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.5;
+  background: Canvas;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 3rem;
+  background-color: #000;
+}
+
+main {
+  max-width: 680px;
+  color: #FFF;
+  font-family: "Baskerville";
+}
+
+h1, h3 {
+  font-family: 'Cinzel', 'Trajan Pro', 'Georgia', serif;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-weight: 600;
+  text-align: center;
+}
+
+a:link {
+  color: #FFF;
+  text-decoration: 'none';
+  font-family: "helvetica";
+}
+
+a:visited {
+  color: #BBBBBB;
+}
+
+/* Table container */
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid #555;
+  border-radius: 12px;
+  background: #000;
+  margin-top: 1.5rem;
+}
+
+/* Table */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #000;
+  color: #fff;
+}
+
+/* Table headings */
+
+thead {
+  background: #000;
+}
+
+th {
+  padding: 14px 12px;
+  color: #fff;
+  font-family: 'Cinzel', 'Trajan Pro', Georgia, serif;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.8rem;
+  border-bottom: 1px solid #555;
+}
+
+/* Table cells */
+
+td {
+  padding: 14px 12px;
+  color: #fff;
+  border-bottom: 1px solid #333;
+  vertical-align: middle;
+}
+
+/* Remove border from final row */
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Hover effect */
+
+tbody tr:hover {
+  background: #333333;
+}
+
+/* Checkbox column */
+
+td:first-child,
+th:first-child {
+  text-align: center;
+  width: 45px;
+}
+
+/* Notches */
+
+td:nth-child(3) {
+text-align: center;
+}
+
+/* Cost */
+
+td:last-child {
+text-align: center;
+}
+
+/* =================================
+ROTATED CHECKBOX
+================================= */
+
+input[type="checkbox"] {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  background: #000;
+  border: 1px solid #fff;
+  border-radius: 2px;
+  cursor: pointer;
+  transform: rotate(45deg);
+  transition:
+  background-color 0.15s ease,
+  transform 0.15s ease;
+}
+
+/* Checkbox hover */
+
+input[type="checkbox"]:hover {
+  background: #333333;
+}
+
+/* Checked checkbox */
+
+input[type="checkbox"]:checked {
+  background: #fff;
+  border-color: #fff;
+  transform: rotate(45deg) scale(1.05);
+}
+
+
+/* Check mark */
+
+input[type="checkbox"]:checked::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 10px;
+  border-right: 2px solid #000;
+  border-bottom: 2px solid #000;
+  transform: rotate(-45deg);
+  left: 5px;
+top: 2px;
+}
