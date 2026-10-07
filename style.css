@@ -86,3 +86,62 @@ nav a {
 nav a:hover {
     color: #aaa;
 }
+
+#spoiler-popup {
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 1000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(0, 0, 0, 0.95);
+}
+
+.spoiler-box {
+    width: min(500px, 80%);
+
+    padding: 40px;
+
+    background: #000;
+
+    border: 1px solid #fff;
+    border-radius: 12px;
+
+    color: #fff;
+
+    text-align: center;
+
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+}
+
+.spoiler-box h2 {
+    margin-top: 0;
+
+    font-family: "Cinzel", "Trajan Pro", Georgia, serif;
+
+    letter-spacing: 0.15em;
+}
+
+.spoiler-box button {
+    margin-top: 20px;
+
+    padding: 12px 25px;
+
+    background: #fff;
+    color: #000;
+
+    border: none;
+    border-radius: 6px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.spoiler-box button:hover {
+    background: #ccc;
+}
