@@ -11,91 +11,133 @@
 </head>
 
 <body>
+
+    <!-- Spoiler Warning -->
+
     <div id="spoiler-popup">
-    
+
         <div class="spoiler-box">
-    
-            <h2>⚠️ SPOILER WARNING</h2>
-    
+
+            <h2>⚠ SPOILER WARNING</h2>
+
             <p>
                 This website contains spoilers for
-                <em>Hollow Knight</em>.
+                <strong>Hollow Knight</strong>.
             </p>
-    
-            <p>
-                If you don't want spoilers,
+
+            <p class="warning-text">
+                If you don't want to encounter spoilers,
                 this website is not for you.
             </p>
-    
+
             <button id="continue-button">
                 OK, CONTINUE
             </button>
-    
+
         </div>
-    
+
     </div>
+
+
+    <!-- Navigation -->
+
     <nav>
         <a href="index.html">Home</a>
+        <a href="guide.html">Guide</a>
         <a href="charms.html">Charms</a>
     </nav>
 
-    <main>
 
-        <h1>Hollow Knight Companion</h1>
+    <!-- Homepage -->
 
-        <p>
-            A companion website for
-            <em>Hollow Knight</em>.
-        </p>
+    <main class="home">
 
-        <hr>
+        <section class="hero">
 
-        <section id="beginner-guide">
+            <p class="eyebrow">
+                A COMPANION TO
+            </p>
 
-            <h2>Beginner's Guide</h2>
+            <h1>Hollow Knight</h1>
 
-            <h3>A Foreword</h3>
+            <p class="hero-subtitle">
+                Explore. Discover. Complete.
+            </p>
+
+            <a class="enter-button" href="guide.html">
+                ENTER HALLownest
+            </a>
+
+        </section>
+
+
+        <section class="home-intro">
+
+            <h2>Welcome, Knight.</h2>
 
             <p>
-                As you begin <em>Hollow Knight</em>, you have to keep
-                in mind that this game is hard.
+                Hallownest is vast, mysterious and full of things
+                waiting to be discovered.
             </p>
 
             <p>
-                The most important thing to know is that dying is normal.
-                Don't get discouraged just because you died seventeen
-                times on the first boss.
-            </p>
-
-            <h3>Your First Steps</h3>
-
-            <p>
-                The first area is <strong>Dirtmouth</strong>.
-                From there, you can descend into the
-                <strong>Forgotten Crossroads</strong>.
+                Whether you're beginning your journey or hunting
+                for that final percentage of completion, this
+                companion is here to help.
             </p>
 
         </section>
 
-        <hr>
 
-        <section id="perfection-tracker">
+        <section class="home-links">
 
-            <h2>Perfection Tracker</h2>
+            <a href="guide.html" class="home-card">
 
-            <p>
-                Track your progress towards 112% completion.
-            </p>
+                <h3>Guide</h3>
 
-            <p>
-                <a href="charms.html">Go to Charms →</a>
-            </p>
+                <p>
+                    Beginner's information and useful knowledge
+                    for your journey through Hallownest.
+                </p>
+
+                <span>EXPLORE →</span>
+
+            </a>
+
+
+            <a href="charms.html" class="home-card">
+
+                <h3>Charms</h3>
+
+                <p>
+                    Track all 40 charms and keep your collection
+                    on the path to 112%.
+                </p>
+
+                <span>VIEW CHARMS →</span>
+
+            </a>
+
+
+            <div class="home-card">
+
+                <h3>More Coming</h3>
+
+                <p>
+                    Bosses, abilities, grubs, Pantheons and
+                    more will be added soon.
+                </p>
+
+                <span>SOON</span>
+
+            </div>
 
         </section>
 
     </main>
-    
+
+
     <script src="main.js"></script>
-    
+
 </body>
 </html>
