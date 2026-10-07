@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bosses | Hollow Knight Companion</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="guide.html">Guide</a>
+        <a href="charms.html">Charms</a>
+        <a href="boss.html">Bosses</a>
+    </nav>
+
+
+    <main class="boss-page">
+
+        <header class="page-header">
+
+            <p class="eyebrow">HALLownest</p>
+
+            <h1>Bosses</h1>
+
+            <div class="ornament">◇</div>
+
+            <p>
+                Learn their attacks, discover their weaknesses,
+                and track your victories.
+            </p>
+
+        </header>
+
+
+        <section class="boss-progress">
+
+            <div class="progress-text">
+                <span>BOSSES DEFEATED</span>
+                <strong id="boss-count">0 / 0</strong>
+            </div>
+
+            <div class="progress-bar">
+                <div id="boss-progress-fill"></div>
+            </div>
+
+        </section>
+
+
+        <section id="boss-grid" class="boss-grid">
+            <!-- boss.js generates the cards -->
+        </section>
+
+    </main>
+
+
+    <script src="main.js"></script>
+    <script src="boss.js"></script>
+
+</body>
+
+</html>
