@@ -1489,3 +1489,240 @@ td:last-child {
         font-size: 20px;
     }
 }
+
+/* =========================================
+   BOSS PAGE
+   ========================================= */
+
+.boss-page {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 80px 40px;
+}
+
+
+/* =========================================
+   BOSS PROGRESS
+   ========================================= */
+
+.boss-progress {
+    max-width: 700px;
+    margin: 0 auto 60px;
+}
+
+
+/* =========================================
+   BOSS CARDS
+   ========================================= */
+
+.boss-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.boss-card {
+    width: 50%;
+    min-width: 600px;
+    max-width: 850px;
+
+    padding: 35px;
+
+    background: #000;
+
+    border: 1px solid #444;
+    border-radius: 14px;
+
+    transition:
+        transform 0.2s ease,
+        border-color 0.2s ease,
+        background 0.2s ease;
+}
+
+.boss-card:hover {
+    transform: translateY(-5px);
+
+    background: #111;
+
+    border-color: #fff;
+}
+
+
+/* =========================================
+   BOSS IMAGE
+   ========================================= */
+
+.boss-image {
+    display: block;
+
+    width: 100%;
+    height: 280px;
+
+    object-fit: contain;
+
+    margin-bottom: 30px;
+    padding-bottom: 25px;
+
+    border-bottom: 1px solid #333;
+}
+
+
+/* =========================================
+   BOSS TITLE
+   ========================================= */
+
+.boss-number {
+    margin-bottom: 12px;
+
+    color: #666;
+
+    font-size: 0.75rem;
+    letter-spacing: 3px;
+}
+
+.boss-card h2 {
+    margin: 0 0 8px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 2.2rem;
+    font-weight: normal;
+}
+
+.boss-location {
+    margin: 0;
+
+    color: #999;
+
+    font-size: 0.9rem;
+}
+
+
+/* =========================================
+   ATTACKS + TIPS
+   ========================================= */
+
+.boss-section {
+    margin-top: 30px;
+    padding-top: 22px;
+
+    border-top: 1px solid #333;
+}
+
+.boss-section h3 {
+    margin: 0 0 15px;
+
+    color: #aaa;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 0.7rem;
+    letter-spacing: 3px;
+}
+
+.boss-section ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.boss-section li {
+    margin-bottom: 8px;
+
+    color: #ccc;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   DEFEATED CHECKBOX
+   ========================================= */
+
+.boss-defeated {
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    margin-top: 30px;
+    padding-top: 22px;
+
+    border-top: 1px solid #333;
+
+    cursor: pointer;
+
+    color: #fff;
+
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+}
+
+.boss-defeated input {
+    position: absolute;
+
+    opacity: 0;
+}
+
+.boss-defeated span {
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+
+    background: #000;
+
+    border: 1px solid #fff;
+    border-radius: 2px;
+
+    transform: rotate(45deg);
+
+    transition: background 0.15s ease;
+}
+
+.boss-defeated:hover span {
+    background: #333;
+}
+
+.boss-defeated input:checked + span {
+    background: #fff;
+}
+
+.boss-defeated input:checked + span::after {
+    content: "✓";
+
+    display: block;
+
+    color: #000;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    transform: rotate(-45deg);
+
+    margin-left: 3px;
+    margin-top: -1px;
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 800px) {
+
+    .boss-page {
+        padding: 60px 20px;
+    }
+
+    .boss-card {
+        width: 90%;
+        min-width: 0;
+    }
+
+    .boss-image {
+        height: 220px;
+    }
+
+}
