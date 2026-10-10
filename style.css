@@ -782,9 +782,9 @@ td:last-child {
 
     padding: 35px;
 
-    background: #000;
+    background: #fff;
 
-    border: 1px solid #444;
+    border: 1px solid #bbb;
     border-radius: 14px;
 
     transition:
@@ -796,9 +796,9 @@ td:last-child {
 .boss-card:hover {
     transform: translateY(-5px);
 
-    background: #111;
+    background: #eee;
 
-    border-color: #fff;
+    border-color: #000;
 }
 
 
@@ -817,7 +817,7 @@ td:last-child {
     margin-bottom: 30px;
     padding-bottom: 25px;
 
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid #ccc;
 }
 
 
@@ -828,7 +828,7 @@ td:last-child {
 .boss-number {
     margin-bottom: 12px;
 
-    color: #666;
+    color: #999;
 
     font-size: 0.75rem;
     letter-spacing: 3px;
@@ -846,7 +846,7 @@ td:last-child {
 .boss-location {
     margin: 0;
 
-    color: #999;
+    color: #666;
 
     font-size: 0.9rem;
 }
@@ -860,13 +860,13 @@ td:last-child {
     margin-top: 30px;
     padding-top: 22px;
 
-    border-top: 1px solid #333;
+    border-top: 1px solid #ccc;
 }
 
 .boss-section h3 {
     margin: 0 0 15px;
 
-    color: #aaa;
+    color: #555;
 
     font-family: Arial, Helvetica, sans-serif;
 
@@ -882,7 +882,7 @@ td:last-child {
 .boss-section li {
     margin-bottom: 8px;
 
-    color: #ccc;
+    color: #333;
 
     line-height: 1.5;
 }
@@ -902,11 +902,11 @@ td:last-child {
     margin-top: 30px;
     padding-top: 22px;
 
-    border-top: 1px solid #333;
+    border-top: 1px solid #ccc;
 
     cursor: pointer;
 
-    color: #fff;
+    color: #000;
 
     font-size: 0.7rem;
     letter-spacing: 2px;
@@ -924,9 +924,9 @@ td:last-child {
     width: 20px;
     height: 20px;
 
-    background: #000;
+    background: #fff;
 
-    border: 1px solid #fff;
+    border: 1px solid #000;
     border-radius: 2px;
 
     transform: rotate(45deg);
@@ -935,11 +935,11 @@ td:last-child {
 }
 
 .boss-defeated:hover span {
-    background: #333;
+    background: #ccc;
 }
 
 .boss-defeated input:checked + span {
-    background: #fff;
+    background: #000;
 }
 
 .boss-defeated input:checked + span::after {
@@ -947,7 +947,7 @@ td:last-child {
 
     display: block;
 
-    color: #000;
+    color: #fff;
 
     font-size: 14px;
     font-weight: bold;
