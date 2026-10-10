@@ -670,7 +670,7 @@ td:last-child {
 }
 
 .diamond-checkbox input:checked + span {
-    background: #000;
+    background: #fff;
 
     border-color: #000;
 }
