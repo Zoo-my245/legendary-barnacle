@@ -801,6 +801,9 @@ td:last-child {
     border-color: #000;
 }
 
+#boss-grid {
+   columns: 2;
+}
 
 /* =========================================
    BOSS IMAGE
